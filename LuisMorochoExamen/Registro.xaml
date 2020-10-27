@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LuisMorochoExamen.Registro">
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <Label Text="Actividad a Registrar" HorizontalTextAlignment="Center" TextColor="Blue" FontSize="30"/>
+            <Label Text=""/>
+
+        <StackLayout>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <StackLayout Grid.Row="1" Padding="150,20">
+                        <Label Text="Usuario Conectado es: " x:Name="lblUser" HorizontalTextAlignment="Center" TextColor="Red" FontSize="15"/>
+                        <Label x:Name="lblPass"/>
+                        
+                        <Label Text="Ingrese los siguientes datos:" HorizontalTextAlignment="Center" />
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="2" Padding="30,10">
+
+                        <Label Text="NOMBRE: "></Label>
+                        <Entry x:Name="txtDato1" Keyboard="Text" Placeholder="Ingrese su Nombre"></Entry>
+
+                        <Label Text="MONTO: "></Label>
+                        <Entry x:Name="txtDato2" Keyboard="Numeric" Placeholder="Ingrese su monto Inicial"></Entry>
+
+                        <Label Text="PAGO MENSUAL: "></Label>
+                        <Label x:Name="txtDato3"></Label>
+
+                        <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked">
+                        </Button>
+
+                                                   
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
